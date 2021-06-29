@@ -1,0 +1,172 @@
+2021-06-29 18:36:19 [main] INFO  c.u.a.AccountServiceApplication -
+                Starting AccountServiceApplication using Java 15.0.1 on DESKTOP-E7BVR8E with PID 4168 (G:\workSpace1\Account\AccountService\target\classes started by anonymous in G:\workSpace1\Account\AccountService)
+2021-06-29 18:36:19 [main] INFO  c.u.a.AccountServiceApplication -
+                No active profile set, falling back to default profiles: default
+2021-06-29 18:36:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-29 18:36:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interfaces.
+2021-06-29 18:36:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 9098 (http)
+2021-06-29 18:36:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-9098"]
+2021-06-29 18:36:25 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2021-06-29 18:36:25 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-29 18:36:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2021-06-29 18:36:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 6480 ms
+2021-06-29 18:36:26 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Starting...
+2021-06-29 18:36:29 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Start completed.
+2021-06-29 18:36:30 [main] INFO  o.h.jpa.internal.util.LogHelper -
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-29 18:36:31 [main] INFO  org.hibernate.Version -
+                HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-29 18:36:31 [main] INFO  o.h.annotations.common.Version -
+                HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-29 18:36:32 [main] INFO  org.hibernate.dialect.Dialect -
+                HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-29 18:36:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-29 18:36:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 18:36:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-29 18:36:39 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+                Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-29 18:36:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-9098"]
+2021-06-29 18:36:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 9098 (http) with context path ''
+2021-06-29 18:36:40 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+                Context refreshed
+2021-06-29 18:36:40 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+                Found 1 custom documentation plugin(s)
+2021-06-29 18:36:40 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+                Scanning for api listing references
+2021-06-29 18:36:41 [main] INFO  c.u.a.AccountServiceApplication -
+                Started AccountServiceApplication in 24.99 seconds (JVM running for 29.34)
+2021-06-29 18:40:59 [http-nio-9098-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-29 18:40:59 [http-nio-9098-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2021-06-29 18:40:59 [http-nio-9098-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 208 ms
+2021-06-29 18:41:00 [http-nio-9098-exec-2] INFO  c.ust.account.Aspectj.LoggingAspect -
+                before called-------------->ageSort
+2021-06-29 18:41:03 [http-nio-9098-exec-2] INFO  c.ust.account.Aspectj.LoggingAspect -
+                after throwing called-------------->ageSort
+2021-06-29 18:41:03 [http-nio-9098-exec-2] INFO  c.ust.account.Aspectj.LoggingAspect -
+                after called-------------->ageSort
+2021-06-29 18:41:03 [http-nio-9098-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.ust.account.dto.accountDto. Ensure that com.ust.account.dto.accountDto has a non-private no-argument constructor.
+
+1 error] with root cause
+java.lang.NoSuchMethodException: com.ust.account.dto.accountDto.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3508)
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2711)
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:333)
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:348)
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:141)
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:115)
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:72)
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:573)
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:406)
+	at com.ust.account.Converter.DtoConvert.entityToDto(DtoConvert.java:17)
+	at com.ust.account.Converter.DtoConvert.lambda$0(DtoConvert.java:24)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.ust.account.Converter.DtoConvert.entityToDto(DtoConvert.java:24)
+	at com.ust.account.Service.AccountServiceImpl.sortByAge(AccountServiceImpl.java:83)
+	at com.ust.account.Controller.AccountController.ageSort(AccountController.java:75)
+	at com.ust.account.Controller.AccountController$$FastClassBySpringCGLIB$$8120f1d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.ust.account.Controller.AccountController$$EnhancerBySpringCGLIB$$ad3d1ee8.ageSort(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-06-29 18:42:15 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+                Application shutdown requested.
+2021-06-29 18:42:15 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 18:42:15 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown initiated...
+2021-06-29 18:42:15 [RMI TCP Connection(15)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown completed.

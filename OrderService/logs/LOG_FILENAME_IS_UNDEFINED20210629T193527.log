@@ -1,0 +1,114 @@
+2021-06-29 19:35:29 [main] INFO  com.ust.OrderServiceApplication -
+                Starting OrderServiceApplication using Java 15.0.1 on DESKTOP-E7BVR8E with PID 280 (G:\workSpace1\Account\OrderService\target\classes started by anonymous in G:\workSpace1\Account\OrderService)
+2021-06-29 19:35:29 [main] INFO  com.ust.OrderServiceApplication -
+                No active profile set, falling back to default profiles: default
+2021-06-29 19:35:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-29 19:35:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces.
+2021-06-29 19:35:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 9092 (http)
+2021-06-29 19:35:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-9092"]
+2021-06-29 19:35:33 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2021-06-29 19:35:33 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-29 19:35:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2021-06-29 19:35:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 3766 ms
+2021-06-29 19:35:33 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Starting...
+2021-06-29 19:35:35 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Start completed.
+2021-06-29 19:35:36 [main] INFO  o.h.jpa.internal.util.LogHelper -
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-29 19:35:36 [main] INFO  org.hibernate.Version -
+                HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-29 19:35:37 [main] INFO  o.h.annotations.common.Version -
+                HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-29 19:35:38 [main] INFO  org.hibernate.dialect.Dialect -
+                HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-29 19:35:41 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-29 19:35:41 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 19:35:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-29 19:35:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-9092"]
+2021-06-29 19:35:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 9092 (http) with context path ''
+2021-06-29 19:35:43 [main] INFO  com.ust.OrderServiceApplication -
+                Started OrderServiceApplication in 15.352 seconds (JVM running for 17.77)
+2021-06-29 19:39:01 [http-nio-9092-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-29 19:39:01 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2021-06-29 19:39:01 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 2 ms
+2021-06-29 19:39:02 [http-nio-9092-exec-2] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:39:08 [http-nio-9092-exec-2] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:39:08 [http-nio-9092-exec-2] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 19:40:39 [http-nio-9092-exec-4] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:40:40 [http-nio-9092-exec-4] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:40:40 [http-nio-9092-exec-4] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 19:42:24 [http-nio-9092-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -
+                Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-06-29 19:42:34 [http-nio-9092-exec-9] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... updateodr
+2021-06-29 19:42:34 [http-nio-9092-exec-9] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... updateodr
+2021-06-29 19:42:34 [http-nio-9092-exec-9] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... updateodr
+2021-06-29 19:42:55 [http-nio-9092-exec-10] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:42:55 [http-nio-9092-exec-10] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:42:55 [http-nio-9092-exec-10] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 19:43:05 [http-nio-9092-exec-1] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:43:05 [http-nio-9092-exec-1] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:43:05 [http-nio-9092-exec-1] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 19:43:07 [http-nio-9092-exec-2] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:43:07 [http-nio-9092-exec-2] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:43:07 [http-nio-9092-exec-2] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 19:43:10 [http-nio-9092-exec-3] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:43:10 [http-nio-9092-exec-3] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:43:10 [http-nio-9092-exec-3] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 19:43:12 [http-nio-9092-exec-5] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:43:12 [http-nio-9092-exec-5] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:43:12 [http-nio-9092-exec-5] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 19:43:19 [http-nio-9092-exec-4] INFO  com.ust.Aspectj.LoggingAspect -
+                before called.... place
+2021-06-29 19:43:19 [http-nio-9092-exec-4] INFO  com.ust.Aspectj.LoggingAspect -
+                after returning called.... place
+2021-06-29 19:43:19 [http-nio-9092-exec-4] INFO  com.ust.Aspectj.LoggingAspect -
+                after called.... place
+2021-06-29 20:09:01 [RMI TCP Connection(49)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+                Application shutdown requested.
+2021-06-29 20:09:02 [RMI TCP Connection(49)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 20:09:02 [RMI TCP Connection(49)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown initiated...
+2021-06-29 20:09:03 [RMI TCP Connection(49)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown completed.

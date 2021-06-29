@@ -1,0 +1,52 @@
+2021-06-27 21:20:04 [main] INFO  com.ust.productServiceApp -
+                Starting productServiceApp using Java 15.0.1 on DESKTOP-E7BVR8E with PID 3044 (G:\workSpace1\Account\ProductService\target\classes started by anonymous in G:\workSpace1\Account\ProductService)
+2021-06-27 21:20:04 [main] INFO  com.ust.productServiceApp -
+                No active profile set, falling back to default profiles: default
+2021-06-27 21:20:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-27 21:20:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2021-06-27 21:20:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 9099 (http)
+2021-06-27 21:20:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-9099"]
+2021-06-27 21:20:06 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2021-06-27 21:20:06 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-27 21:20:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2021-06-27 21:20:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 2248 ms
+2021-06-27 21:20:06 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Starting...
+2021-06-27 21:20:06 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Start completed.
+2021-06-27 21:20:07 [main] INFO  o.h.jpa.internal.util.LogHelper -
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-27 21:20:07 [main] INFO  org.hibernate.Version -
+                HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-27 21:20:07 [main] INFO  o.h.annotations.common.Version -
+                HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-27 21:20:08 [main] INFO  org.hibernate.dialect.Dialect -
+                HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-27 21:20:09 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-27 21:20:09 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 21:20:10 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-27 21:20:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-9099"]
+2021-06-27 21:20:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 9099 (http) with context path ''
+2021-06-27 21:20:11 [main] INFO  com.ust.productServiceApp -
+                Started productServiceApp in 7.431 seconds (JVM running for 8.956)
+2021-06-27 21:22:28 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+                Application shutdown requested.
+2021-06-27 21:22:28 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-27 21:22:28 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown initiated...
+2021-06-27 21:22:28 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown completed.
