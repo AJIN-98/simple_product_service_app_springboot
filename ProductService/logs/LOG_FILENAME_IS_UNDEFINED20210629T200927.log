@@ -195,3 +195,11 @@
                 after returning called.... getbyid
 2021-06-29 20:28:31 [http-nio-9099-exec-10] INFO  com.ust.Aspectj.LoggingAspect -
                 after called.... getbyid
+2021-06-29 20:41:34 [RMI TCP Connection(39)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -
+                Application shutdown requested.
+2021-06-29 20:41:37 [RMI TCP Connection(39)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 20:41:38 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown initiated...
+2021-06-29 20:41:38 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown completed.

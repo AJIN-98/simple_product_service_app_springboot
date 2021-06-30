@@ -1,0 +1,50 @@
+2021-06-29 23:20:22 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ust.AccountServiceTest.AccountServiceApplicationTest], using SpringBootContextLoader
+2021-06-29 23:20:22 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+                Could not detect default resource locations for test class [com.ust.AccountServiceTest.AccountServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-06-29 23:20:22 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-06-29 23:20:22 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@aeab9a1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@40f70521, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@774698ab, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@55342f40, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@a4ca3f6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@72ea6193, org.springframework.test.context.transaction.TransactionalTestExecutionListener@31aa3ca5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45905bff, org.springframework.test.context.event.EventPublishingTestExecutionListener@2a2c13a8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@b6b1987, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6b44435b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ccca26f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@66b7550d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3543df7d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7c541c15]
+2021-06-29 23:20:23 [main] INFO  c.u.A.AccountServiceApplicationTest -
+                Starting AccountServiceApplicationTest using Java 15.0.1 on DESKTOP-E7BVR8E with PID 3404 (started by anonymous in G:\workSpace1\Account\AccountService)
+2021-06-29 23:20:23 [main] INFO  c.u.A.AccountServiceApplicationTest -
+                No active profile set, falling back to default profiles: default
+2021-06-29 23:20:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-29 23:20:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interfaces.
+2021-06-29 23:20:28 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Starting...
+2021-06-29 23:20:29 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Start completed.
+2021-06-29 23:20:29 [main] INFO  o.h.jpa.internal.util.LogHelper -
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-29 23:20:30 [main] INFO  org.hibernate.Version -
+                HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-06-29 23:20:30 [main] INFO  o.h.annotations.common.Version -
+                HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-29 23:20:30 [main] INFO  org.hibernate.dialect.Dialect -
+                HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-29 23:20:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-29 23:20:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 23:20:33 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-29 23:20:33 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+                Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-29 23:20:35 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+                Context refreshed
+2021-06-29 23:20:35 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -
+                Found 1 custom documentation plugin(s)
+2021-06-29 23:20:35 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -
+                Scanning for api listing references
+2021-06-29 23:20:36 [main] INFO  c.u.A.AccountServiceApplicationTest -
+                Started AccountServiceApplicationTest in 12.979 seconds (JVM running for 16.213)
+2021-06-29 23:20:36 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 23:20:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown initiated...
+2021-06-29 23:20:36 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+                HikariPool-1 - Shutdown completed.
