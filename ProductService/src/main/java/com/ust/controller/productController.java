@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ust.Service.ProductService;
 import com.ust.dto.ProductDto;
 
+import io.swagger.annotations.Api;
+
 
 @ComponentScan
+@Api
 @RestController
 public class productController {
 	

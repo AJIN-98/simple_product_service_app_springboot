@@ -43,5 +43,6 @@
 		<module>AccountService</module>
 		<module>ProductService</module>
 		<module>OrderService</module>
+		<module>SubscriptionService</module>
 	</modules>
 </project>

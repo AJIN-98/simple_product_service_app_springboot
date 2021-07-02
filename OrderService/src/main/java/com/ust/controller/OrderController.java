@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ust.Converter.DtoConvert;
+
 import com.ust.Service.OrderService;
 import com.ust.dto.OrderDto;
-import com.ust.model.productOrder;
 
 
+import io.swagger.annotations.Api;
+
+@Api
 @RestController
 public class OrderController {
 	
