@@ -6,7 +6,7 @@ import com.ust.account.dto.accountDto;
 import com.ust.account.Exception.userNotFoundException;
 import com.ust.account.model.User;
 
-public interface AccountService {
+public interface AccountService {				
 	boolean addUser(accountDto user);
 	boolean updateUser(accountDto user) throws userNotFoundException;
 	accountDto getUser(int accountId) throws userNotFoundException;

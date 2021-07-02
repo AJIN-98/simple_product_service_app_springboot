@@ -14,7 +14,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@EnableSwagger2
+@EnableSwagger2 //swagger annotation
 @SpringBootApplication
 public class AccountServiceApplication {
 
@@ -25,7 +25,7 @@ public class AccountServiceApplication {
 	}
 
 	@Bean
-	public ApiInfo apiInfo() {
+	public ApiInfo apiInfo() {								//bean for swagger 
 		ApiInfoBuilder infoBuilder = new ApiInfoBuilder();
 		
 		infoBuilder.title("Accounts Service")
@@ -37,7 +37,7 @@ public class AccountServiceApplication {
 	}
 	
 	@Bean
-	public Docket apiDocket(){
+	public Docket apiDocket(){								//bean for swagger 
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 				.apis(RequestHandlerSelectors.withClassAnnotation(Api.class))

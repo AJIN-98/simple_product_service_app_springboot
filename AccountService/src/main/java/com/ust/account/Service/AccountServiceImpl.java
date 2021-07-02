@@ -22,7 +22,7 @@ public class AccountServiceImpl implements AccountService {
 	DtoConvert convert;
 
 	@Override
-	public boolean addUser(accountDto user) {
+	public boolean addUser(accountDto user) {					//add user
 		try {
 			repository.save(convert.dtoToEntity(user));
 			return true;
@@ -33,7 +33,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public boolean updateUser(accountDto user) {
+	public boolean updateUser(accountDto user) {				//update user
 		try {
 			User us=repository.getByAccountId(user.getAccountId());
 			if(us!=null) {
@@ -52,7 +52,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public accountDto getUser(int accountId) throws userNotFoundException {
+	public accountDto getUser(int accountId) throws userNotFoundException { //get user by id
 		try {
 			User us=repository.getByAccountId(accountId);
 			return convert.entityToDto(us);
@@ -63,21 +63,21 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public List<accountDto> sortByFirstName() {
+	public List<accountDto> sortByFirstName() {							//sort by first name
 		List<User> list=repository.findAll();
 		list=list.stream().sorted(Comparator.comparing(User::getFirstName)).collect(Collectors.toList());
 		return convert.entityToDto(list);
 	}
 
 	@Override
-	public List<accountDto> sortByLastName() {
+	public List<accountDto> sortByLastName() {							//sort by last name
 		List<User> list=repository.findAll();
 		list=list.stream().sorted(Comparator.comparing(User::getLastName)).collect(Collectors.toList());
 		return convert.entityToDto(list);
 	}
 
 	@Override
-	public List<accountDto> sortByAge() {
+	public List<accountDto> sortByAge() {	//sort by age
 		List<User> list=repository.findAll();
 		list=list.stream().sorted(Comparator.comparingInt(User::getAge)).collect(Collectors.toList());
 		return convert.entityToDto(list);

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import lombok.Data;
 
-@Data
+@Data //lombok annotation for initializing getter setter
 public class accountDto {
 	
 	private int accountId;

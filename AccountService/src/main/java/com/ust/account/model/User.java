@@ -10,7 +10,7 @@ import javax.persistence.Id;
 
 import com.sun.istack.NotNull;
 
-@Entity
+@Entity	
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

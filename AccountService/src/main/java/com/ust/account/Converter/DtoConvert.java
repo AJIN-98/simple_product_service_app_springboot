@@ -10,7 +10,7 @@ import com.ust.account.model.User;
 @Component
 public class DtoConvert {
 	
-
+//entity to Dto convert
 public accountDto entityToDto(User user) {
 		
 		ModelMapper mapper =new ModelMapper();
@@ -19,11 +19,13 @@ public accountDto entityToDto(User user) {
 		
 	}
 
+//entity to Dto convert
 public  List<accountDto> entityToDto(List<User> student) {
 	
 	return	student.stream().map(x -> entityToDto(x)).collect(Collectors.toList());
 	
 }
+//Dto to Entity convert
 public User dtoToEntity(accountDto dto)
 {
 	ModelMapper mapper = new ModelMapper();
@@ -31,6 +33,7 @@ public User dtoToEntity(accountDto dto)
 	return map;
 }
 
+//Dto to Entity convert
 public List<User> dtoToEntity(List<accountDto> dto)
 {
 

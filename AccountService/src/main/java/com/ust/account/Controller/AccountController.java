@@ -26,6 +26,7 @@ public class AccountController {
 	@Autowired AccountService service;
 	@Autowired DtoConvert convert;
 	
+	//create account
 	@PostMapping("/user/create")
 	public ResponseEntity<String> Create(@RequestBody accountDto user) {
 	try {
@@ -34,7 +35,8 @@ public class AccountController {
 	} catch (Exception e) {
 		return new ResponseEntity<String>("Failed to create",HttpStatus.CONFLICT);
 	}
-}
+}	
+	//update account
 	@PutMapping("/user/update")
 	public ResponseEntity<String> update(@RequestBody accountDto user){
 		try {
@@ -44,6 +46,7 @@ public class AccountController {
 			return new ResponseEntity<String>("Failed to update",HttpStatus.CONFLICT);
 		}
 	}
+	//get user by Id
 	@GetMapping("/user/{id}")
 	public ResponseEntity<?> getUserById(@PathVariable int id) {
 		try {
@@ -56,18 +59,24 @@ public class AccountController {
 			return new ResponseEntity<String>("not found", HttpStatus.NOT_FOUND);
 		}
 	}
+	
+	//sort users by first name
 	@GetMapping("/user/fnamesort")
 	public ResponseEntity<?> fsort(){
 		
 			List<accountDto> list =service.sortByFirstName();
 			return new ResponseEntity <List<accountDto>> (list, HttpStatus.OK);
 		}
+	
+	//sort by last name
 	@GetMapping("/user/lnamesort")
 	public ResponseEntity<?> lsort(){
 		
 			List<accountDto> list =(service.sortByLastName());
 			return new ResponseEntity <List<accountDto>> (list, HttpStatus.OK);
 		}
+	
+	//sort by age
 	@GetMapping("/user/agesort")
 	public ResponseEntity<?> ageSort(){
 		

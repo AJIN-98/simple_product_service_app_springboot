@@ -17,14 +17,14 @@ import com.ust.dto.OrderDto;
 
 import io.swagger.annotations.Api;
 
-@Api
-@RestController
+@Api //swagger annotation
+@RestController	
 public class OrderController {
 	
 	@Autowired
-	OrderService service;
+	OrderService service;	
 
-	
+	//place order
 	@PostMapping("order/cart")
 	public ResponseEntity<String> place(@RequestBody OrderDto order){
 		try {
@@ -35,6 +35,7 @@ public class OrderController {
 		}
 	}
 	
+	//update order
 	@PutMapping("order/update")
 	public ResponseEntity<String> updateodr(@RequestBody OrderDto order){
 		try {
@@ -45,6 +46,7 @@ public class OrderController {
 		}
 	}
 	
+	//get order by Id
 	@GetMapping("order/{id}")
 	public ResponseEntity<?> place(@PathVariable int id){
 		try {
