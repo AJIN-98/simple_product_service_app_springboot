@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xml>
-<configuration debug="true">
-    <property name="LOG_FILE_LOCATION" value="logs" />
-    <property name="LOG_FILE_NAME" value="Accounts" />
-    <property name="LOG_FILE_EXTENSION" value=".log" />
-    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"
-        timeReference="contextBirth" />
-    <!--<timestamp key="bySecond" datePattern="yyyyMMdd" /> -->
-    <appender name="STDOUT"
-        class="ch.qos.logback.core.ConsoleAppender">
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <Pattern> %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -
-                %msg%n</Pattern>
-        </layout>
-    </appender>
-    <appender name="FILE-AUDIT"
-        class="ch.qos.logback.core.FileAppender">
-        <file>${LOG_FILE_LOCATION}/${LOG_FILENAME}${bySecond}${LOG_FILE_EXTENSION}</file>
-        <encoder
-            class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <!-- <Pattern> %d{yyyy-MM-dd HH:mm:ss} - %msg%n </Pattern> -->
-            <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -
-                %msg%n</Pattern>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/console.xml"/>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [AccountService:%thread:%X{X-B3-TraceId}:%X{X-B3-SpanId}] %logger{40} - %msg%n
+            </pattern>
         </encoder>
-    </appender>    <!-- Send logs to both console and file audit -->
-    <logger name="com.stackroute" level="INFO" additivity="false">
-        <appender-ref ref="FILE-AUDIT" />
-        <appender-ref ref="STDOUT" />
-    </logger>
-    <root level="INFO">
-        <appender-ref ref="FILE-AUDIT" />
-        <appender-ref ref="STDOUT" />
+    </appender>
+    <appender name="fileout"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>./logs/Account.json</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <maxIndex>8</maxIndex>
+            <FileNamePattern>./logs/Account.json.%i
+            </FileNamePattern>
+        </rollingPolicy>
+        <triggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>128MB</MaxFileSize>
+        </triggeringPolicy>
+
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <providers>
+                <timestamp>
+                    <timeZone>EST</timeZone>
+                </timestamp>
+                <pattern>
+                    <pattern>
+                        {
+                        "level": "%level",
+                        "service": "AccountService",
+                        "traceId": "%X{X-B3-TraceId:-}",
+                        "spanId": "%X{X-B3-SpanId:-}",
+                        "thread": "%thread",
+                        "class": "%logger{40}",
+                        "message": "%message"
+                        }
+                    </pattern>
+                </pattern>
+                <stackTrace>
+                    <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+                        <maxDepthPerThrowable>30</maxDepthPerThrowable>
+                        <maxLength>2048</maxLength>
+                        <shortenedClassNameLength>20</shortenedClassNameLength>
+                        <rootCauseFirst>true</rootCauseFirst>
+                    </throwableConverter>
+                </stackTrace>
+            </providers>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="fileout" />
+        <appender-ref ref="stdout" />
     </root>
 </configuration>

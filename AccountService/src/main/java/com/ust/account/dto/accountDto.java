@@ -2,15 +2,22 @@ package com.ust.account.dto;
 
 import java.time.LocalDate;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import lombok.Data;
 
 @Data //lombok annotation for initializing getter setter
 public class accountDto {
 	
+	@Value("accountId")
 	private int accountId;
+	@Value("firstName")
 	private String firstName;
+	@Value("middleName")
 	private String middleName;
+	@Value("lastName")
 	private String lastName;
+	@Value("age")
 	private int age;
 	private LocalDate createdate;
 	private LocalDate updatedate;
